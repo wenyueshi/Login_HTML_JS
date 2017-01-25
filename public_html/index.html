@@ -1,20 +1,71 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            div {
+                background-color: #ddd;
+                font-family: Microsoft Yahei;
+                width: 400px;
+                padding-left: 50px;
+                margin-left: 450px;
+            }
+
+            h1{
+                text-align: center;
+            }
+
+            #sub{
+                background-color: #689;
+                width: 250px;
+                height: 30px;
+                color:white;
+                font-weight: bold;
+            }
+        </style>
     </head>
+
     <body>
-        <div>TODO write content</div>
-        
-        <script type="text/script">
-            
-        </script>
+        <div>
+            <h1>Sigh Up</h1></br>
+            <h2>Your basic info</h2>
+            <form method ="post" action="save.php">
+                <strong>Name:</strong>
+                <input type="text" name="myname"/></br>
+                </br>
+
+                <strong>Passward:</strong>
+                <input type="text" name="mypassward"/></br>
+                </br>
+
+                <strong>Age:</strong></br>
+                <input type="radio" name="age" value="1" />Under 13</br>
+                <input type="radio" name="age" value="2"/>13 or older</br>
+                </br>
+
+                <strong>Your profile:</strong></br>
+                <textarea cols="50" rows="4"></textarea></br>
+                </br>
+
+                <strong>Job Role:</strong></br>
+                <select>
+                    <option value="Front-End Developer" selected="selected">Front-End Developer</option>
+                    <option value="Back-End Developer">Back-End Developer</option>
+                </select></br>
+                </br>
+
+                <strong>Interests:</strong></br>
+                <input type="checkbox" name="development" value="1">Development</br>
+                <input type="checkbox" name="design" value="2">Design</br>
+                <input type="checkbox" name="business" value="3">Business</br>
+                </br>
+
+                <input type="submit" name="Sign Up" value="Sign Up" id="sub">
+                </input>
+            </form>
+        </div>
     </body>
+
+    <script type="text/javascript">
+        //这里写javascirpt
+    </script>
+
 </html>
