@@ -28,19 +28,19 @@
         <script type="text/javascript">
             function abc()
             {
-                if (document.getElementById("yourname").value == "")
+                if (document.getElementById("name").value == "")
                 {
                     alert("Please write your name!");
                     form.myname.focus();
                     return false;
                 }
-                if (document.getElementById("yourpassward").value == "")
+                if (document.getElementById("passward").value == "")
                 {
                     alert("Please write your password!");
                     form.mypassward.focus();
                     return false;
                 }
-                if (document.getElementById("yourprofile").value == "")
+                if (document.getElementById("profile").value == "")
                 {
                     alert("please write your profile!");
                     form.profile.focus();
@@ -57,13 +57,13 @@
         <div id="sign">
             <h1>Sigh Up</h1></br>
             <h2>Your basic info</h2>
-            <form method ="post" action="save.php" name="form">
+            <form>
                 <strong>Name:</strong>
-                <input type="text" name="myname" id="yourname"/></br>
+                <input type="text" name="myname" id="name"/></br>
                 </br>
 
                 <strong>Passward:</strong>
-                <input type="password" name="mypassward" id="yourpassward"/></br>
+                <input type="password" name="mypassward" id="passward"/></br>
                 </br>
 
                 <strong>Age:</strong></br>
@@ -72,7 +72,7 @@
                 </br>
 
                 <strong>Your profile:</strong></br>
-                <textarea cols="50" rows="4" name="profile" id="yourprofile"></textarea></br>
+                <textarea cols="50" rows="4" name="profile" id="profile"></textarea></br>
                 </br>
 
                 <strong>Job Role:</strong></br>
